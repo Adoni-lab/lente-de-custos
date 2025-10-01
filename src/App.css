@@ -1,0 +1,111 @@
+/* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container centralizado */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Botões agrupados */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Botões gerais */
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Botões específicos */
+.btn-red {
+  background-color: #dc2626; /* vermelho */
+}
+
+.btn-orange {
+  background-color: #f87171; /* vermelho claro/alaranjado */
+}
+
+.btn-green {
+  background-color: #059669; /* verde */
+}
+
+.btn-blue {
+  background-color: #1e3a8a; /* azul escuro */
+}
+
+.btn-indigo {
+  background-color: #4338ca; /* azul mais forte para Adicionar */
+}
+
+/* Inputs */
+input, select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  input, select {
+    width: 100%;
+  }
+}
