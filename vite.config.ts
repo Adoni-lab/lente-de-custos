@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// Configuração compatível com builds na Vercel
 export default defineConfig({
   plugins: [react()],
-  server: { port: 5173 },
-  base: "./", // ESSENCIAL para funcionar no Vercel
+  base: "./", // garante caminhos relativos no build
+  server: { port: 5173 }
 });
